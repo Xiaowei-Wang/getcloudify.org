@@ -104,7 +104,7 @@ At the moment, the following official manager blueprints are available in the [m
 - [Cloudstack](reference-cloudstack-manager.html)
 
 {%note title=Note%}
-The manager blueprints are comprised not only by the *.yaml* file, but rather the entire directory in which the *.yaml* file resides. Make sure to copy the full directory for when using or editing manager blueprints.
+The manager blueprints are comprised not only by the *.yaml* file, but rather the entire directory in which the *.yaml* file resides. Make sure to copy the full directory for using or editing manager blueprints.
 {%endnote%}
 
 
