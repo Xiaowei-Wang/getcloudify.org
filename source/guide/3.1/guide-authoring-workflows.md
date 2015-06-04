@@ -325,7 +325,7 @@ Step explanation:
 * We aim to create task dependency between each node's first task (the `send_event` about starting the operation) and the last task (the `send_event` about finishing the operation) of each node it has a relationship to.
 * First, we had to somewhat refactor the existing code - we need references for those tasks for creating the dependencies, and so we first created the tasks and stored them in two simple dictionaries which map each instance ID to that instance's relevant tasks(lines 8-15).
 * When adding the tasks to the sequence, we add the tasks we've already created (lines 24 + 26)
-* Finally, we have a new section in the code, in which we go over all instances' relationships, retrieve the source instance's first task and the target instance's last task, and if both exist (might not exist since the source and/or target node might not be be of type `type_name` or of a type which is derived from it) then a dependency is created between them (lines 28-36).
+* Finally, we have a new section in the code, in which we go over all instances' relationships, retrieve the source instance's first task and the target instance's last task, and if both exist (might not exist since the source and/or target node might not be of type `type_name` or of a type which is derived from it) then a dependency is created between them (lines 28-36).
 {% endgcloak %}
 
 
